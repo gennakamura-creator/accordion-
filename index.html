@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!doctype html&gt;</p>
+<p class="p1">&lt;html lang="ja"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="utf-8" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;レセスタ｜初期設定サポート&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="stylesheet" href="./styles.css?v=3" /&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;header class="header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;レセスタ 初期設定サポート&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="sub"&gt;上から順に進めてください。今の位置は自動で表示されます。&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;main class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;section class="card"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- 今ここ ステップ表示 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="steps" id="stepIndicator"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="step"&gt;① ZIPファイル保存&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="step"&gt;② ZIP解凍&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="step"&gt;③ 証明書&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="step"&gt;④ ログイン&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="step"&gt;⑤ パスワード変更&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="step"&gt;⑥ MediPort&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="step"&gt;⑦ 注意点&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="accordion" id="faqAccordion"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- ① --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="acc-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="acc-trigger" aria-expanded="false" aria-controls="p1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>ZIPファイルを保存（ダウンロード）したい</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="chev"&gt;▾&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="acc-panel" id="p1" hidden&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="acc-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;li&gt;メールで開いただけでは、保存は完了していません。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;li&gt;添付ファイル横の &lt;strong&gt;ダウンロードボタン（↓）&lt;/strong&gt; を押してください。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;li&gt;案内に従って、パソコンに保存してください。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="step-done-btn" data-step="1"&gt;☑ この工程は完了しました&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- ② --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="acc-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="acc-trigger" aria-expanded="false" aria-controls="p2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>ZIPファイルを解凍したい</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="chev"&gt;▾&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="acc-panel" id="p2" hidden&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="acc-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;&lt;strong&gt;Windows&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;li&gt;右クリック →「すべて展開」&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;li&gt;パスワード入力&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;&lt;strong&gt;Mac&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;li&gt;ZIPをダブルクリック → パスワード入力&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>パスワードは &lt;strong&gt;申込時に指定した半角数字4桁&lt;/strong&gt; です。</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="step-done-btn" data-step="2"&gt;☑ この工程は完了しました&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- ③ --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="acc-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="acc-trigger" aria-expanded="false" aria-controls="p3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>証明書（20xx_recesta.pfx）をインストールしたい</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="chev"&gt;▾&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="acc-panel" id="p3" hidden&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="acc-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>「20xx_recesta.pfx」をダブルクリックし、 <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;strong&gt;9_registration_info の最下行パスワード&lt;/strong&gt;を入力してください。</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="mac-note"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="mac-note-title"&gt;🟨 Macをご利用の方へ（キーチェーン）&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Macログイン時のパスワードを求められる場合があります&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;不明な場合は管理者へご確認ください&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;不明な場合、Macでは設定できません&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="step-done-btn" data-step="3"&gt;☑ この工程は完了しました&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- ④ --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="acc-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="acc-trigger" aria-expanded="false" aria-controls="p4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>レセスタにログインしたい</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="chev"&gt;▾&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="acc-panel" id="p4" hidden&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="acc-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;a href="https://app.recesta.jp/#/login" target="_blank"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>https://app.recesta.jp/#/login</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;RSから始まるIDとパスワードでログインしてください。&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="step-done-btn" data-step="4"&gt;☑ この工程は完了しました&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- ⑤ --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="acc-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="acc-trigger" aria-expanded="false" aria-controls="p5"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>初回パスワードを変更したい</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="chev"&gt;▾&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="acc-panel" id="p5" hidden&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="acc-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;li&gt;8〜20文字&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;li&gt;英字・数字・記号を使用&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="step-done-btn" data-step="5"&gt;☑ この工程は完了しました&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- ⑥ --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="acc-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="acc-trigger" aria-expanded="false" aria-controls="p6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>MediPortにログインしたい</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="chev"&gt;▾&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="acc-panel" id="p6" hidden&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="acc-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;a href="https://mediport.recesta.jp" target="_blank"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>https://mediport.recesta.jp</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;レセスタと同じID・パスワードです。&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="step-done-btn" data-step="6"&gt;☑ この工程は完了しました&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- ⑦ --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="acc-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="acc-trigger" aria-expanded="false" aria-controls="p7"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>利用時の注意点（縦覧点検）</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="chev"&gt;▾&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="acc-panel" id="p7" hidden&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="acc-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;過去6ヶ月分のレセプトデータをご準備ください。&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="step-done-btn" data-step="7"&gt;☑ この工程は完了しました&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
+<p class="p1">&lt;/main&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script src="./script.js?v=3" defer&gt;&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1">/* ===== 今ここ &amp; 完了管理（index.html内完結） ===== */</p>
+<p class="p1">const steps = document.querySelectorAll(".step");</p>
+<p class="p1">const doneKey = "recesta_steps_done";</p>
+<p class="p1">let done = JSON.parse(localStorage.getItem(doneKey) || "{}");</p>
+<p class="p2"><br></p>
+<p class="p1">function refresh(){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.querySelectorAll(".step-done-btn").forEach(btn=&gt;{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const s = btn.dataset.step;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>btn.textContent = done[s] ? "✔ 完了済みです" : "☑ この工程は完了しました";</p>
+<p class="p1"><span class="Apple-converted-space">    </span>btn.classList.toggle("is-done", !!done[s]);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>});</p>
+<p class="p1"><span class="Apple-converted-space">  </span>steps.forEach((st,i)=&gt;{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>st.classList.toggle("done", !!done[i+1]);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>});</p>
+<p class="p1">}</p>
+<p class="p1">refresh();</p>
+<p class="p2"><br></p>
+<p class="p1">document.addEventListener("click", e=&gt;{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const btn = e.target.closest(".step-done-btn");</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if(btn){</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const s = btn.dataset.step;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>done[s] = !done[s];</p>
+<p class="p1"><span class="Apple-converted-space">    </span>localStorage.setItem(doneKey, JSON.stringify(done));</p>
+<p class="p1"><span class="Apple-converted-space">    </span>refresh();</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1">});</p>
+<p class="p2"><br></p>
+<p class="p1">document.querySelectorAll(".acc-trigger").forEach((btn,i)=&gt;{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>btn.addEventListener("click", ()=&gt;{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>steps.forEach(s=&gt;s.classList.remove("active"));</p>
+<p class="p1"><span class="Apple-converted-space">    </span>steps[i].classList.add("active");</p>
+<p class="p1"><span class="Apple-converted-space">  </span>});</p>
+<p class="p1">});</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>

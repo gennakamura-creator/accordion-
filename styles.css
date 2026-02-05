@@ -1,0 +1,183 @@
+{\rtf1\ansi\ansicpg932\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 :root\{\
+  --bg:#0b1220;\
+  --card:#121a2b;\
+  --text:#eef2ff;\
+  --muted:#b6c0e0;\
+  --line:rgba(255,255,255,.14);\
+  --ok:#00c896;\
+  --warn:#ffd246;\
+\}\
+\
+*\{ box-sizing:border-box; \}\
+\
+body\{\
+  margin:0;\
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", sans-serif;\
+  background: var(--bg);\
+  color: var(--text);\
+  line-height:1.6;\
+\}\
+\
+.container\{\
+  width:min(900px,92vw);\
+  margin:0 auto;\
+\}\
+\
+.header\{\
+  padding:28px 0 10px;\
+\}\
+\
+h1\{\
+  margin:0;\
+  font-size:24px;\
+\}\
+\
+.sub\{\
+  margin:8px 0 0;\
+  color:var(--muted);\
+\}\
+\
+.card\{\
+  background: var(--card);\
+  border:1px solid var(--line);\
+  border-radius:14px;\
+  padding:18px;\
+  margin:16px 0 40px;\
+\}\
+\
+.card-title\{\
+  margin:0 0 10px;\
+  font-size:16px;\
+  color:var(--muted);\
+\}\
+\
+/* ===== \uc0\u12473 \u12486 \u12483 \u12503 \u34920 \u31034  ===== */\
+.steps\{\
+  display:grid;\
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));\
+  gap:8px;\
+  margin-bottom:16px;\
+\}\
+\
+.step\{\
+  padding:10px 12px;\
+  border-radius:10px;\
+  background: rgba(255,255,255,.06);\
+  color:var(--muted);\
+  font-size:13px;\
+  border:1px solid var(--line);\
+\}\
+\
+.step.active\{\
+  background: rgba(255,255,255,.16);\
+  color:var(--text);\
+  font-weight:600;\
+  border-color: rgba(255,255,255,.35);\
+\}\
+\
+.step.done\{\
+  background: rgba(0,200,150,.18);\
+  color:#c9fff0;\
+  border-color: rgba(0,200,150,.45);\
+\}\
+\
+/* ===== \uc0\u12450 \u12467 \u12540 \u12487 \u12451 \u12458 \u12531  ===== */\
+.accordion\{\
+  border-top:1px solid var(--line);\
+\}\
+\
+.acc-item\{\
+  border-bottom:1px solid var(--line);\
+\}\
+\
+.acc-trigger\{\
+  width:100%;\
+  display:flex;\
+  align-items:center;\
+  justify-content:space-between;\
+  gap:12px;\
+\
+  padding:14px;\
+  background:transparent;\
+  border:0;\
+  color:var(--text);\
+  text-align:left;\
+  font-size:15px;\
+  cursor:pointer;\
+\}\
+\
+.acc-trigger:hover\{\
+  background: rgba(255,255,255,.05);\
+\}\
+\
+.chev\{\
+  transition:transform .2s ease;\
+\}\
+\
+.acc-trigger[aria-expanded="true"] .chev\{\
+  transform:rotate(180deg);\
+\}\
+\
+.acc-panel[hidden]\{ display:none; \}\
+\
+.acc-panel\{\
+  padding:0 14px 14px;\
+\}\
+\
+.acc-content ul\{\
+  margin:10px 0 0;\
+  padding-left:18px;\
+\}\
+\
+.acc-content li\{\
+  margin:6px 0;\
+\}\
+\
+.acc-content p\{\
+  margin:10px 0 0;\
+\}\
+\
+/* ===== \uc0\u23436 \u20102 \u12508 \u12479 \u12531  ===== */\
+.step-done-btn\{\
+  margin-top:14px;\
+  padding:10px 12px;\
+  border-radius:10px;\
+  border:1px solid rgba(255,255,255,.25);\
+  background: rgba(255,255,255,.08);\
+  color:var(--text);\
+  cursor:pointer;\
+  font-size:14px;\
+\}\
+\
+.step-done-btn:hover\{\
+  background: rgba(255,255,255,.14);\
+\}\
+\
+.step-done-btn.is-done\{\
+  background: rgba(0,200,150,.22);\
+  border-color: rgba(0,200,150,.55);\
+  color:#c9fff0;\
+  font-weight:600;\
+\}\
+\
+/* ===== Mac\uc0\u27880 \u24847 \u65288 \u12461 \u12540 \u12481 \u12455 \u12540 \u12531 \u65289  ===== */\
+.mac-note\{\
+  margin-top:12px;\
+  padding:12px;\
+  border-radius:12px;\
+  border:1px solid rgba(255,210,70,.55);\
+  background: rgba(255,210,70,.12);\
+\}\
+\
+.mac-note-title\{\
+  font-weight:700;\
+  margin-bottom:6px;\
+\}\
+}
